@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Computer Workshop Course}
+\lhead{Final Assignment}
+\rfoot{Page \thepage}
+
+\title{
+    \vspace{2in}
+    \textbf{Final Assignment:}\\
+    \textbf{Integration of Tools and Practices}\\
+    \large Iran University of Science and Technology\\
+    \large Department of Computer Engineering\\
+    \vspace{2in}
+}
+
+\author{
+    \vspace{0.5in}
+    Dr.\ MalekiMajd\\
+    Computer Workshop 02-03\\
+    \vspace{0.5in}
+}
+
+\date{Due Date: 7 Bahman}
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+    \thispagestyle{empty}
+\end{titlepage}
+
+\newpage
+
+\section*{Introduction}
+This final assignment is designed to encapsulate the core skills and knowledge you have acquired throughout the course. It will require you to apply all the tools and practices covered, including Git, LaTeX, and more. This assignment must be submitted as a LaTeX document managed under version control using Git, with the repository hosted on GitHub and the document compiled using GitHub Actions.
+
+\section*{Instructions}
+\begin{enumerate}
+    \item Create a new GitHub repository and clone it to your local machine.
+    \item Write your assignment document in LaTeX, commit your changes regularly, and push them to your GitHub repository.
+    \item Set up GitHub Actions to compile your LaTeX document to a PDF upon every tag in the repository.
+    \item The document should include sections for each category of the questions.
+\end{enumerate}
+
+\subsection*{More on GitHub Actions}
+We have already experimented with GitHub actions in the al-folio template before. In this sections, you will be using GitHub actions to compile the LaTeX file you write and upload it on the "Releases section" of your repository.
+
+In order to do this, here are some links that help you achieve this:
+\begin{itemize}
+    \item \url{https://mrturkmen.com/posts/build-release-latex/} \\
+        This link will overall help you to understand what is going on in the Action.
+    \item \url{} \\
+        This is repository created especially for this assignment, it has the GitHub action already setup and running. feel free to use the workflow \texttt{.yml}
+        for your own usage.
+\end{itemize}
+
+\paragraph{NOTE:} The Action is triggered on every new \textbf{tag}. Learn about tags by searching and make sure to tag the commit you want to compile to PDF using
+GitHub Actions.
+
+\subsection*{LaTeX Document Guidelines}
+You must create a structured LaTeX document including a title page, sections for each task, and a page for table of contents.
+\end{document}
